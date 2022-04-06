@@ -1,10 +1,21 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { CondidateListComponent } from './condidate-list/condidate-list.component';
+import { HomeComponent } from './home/home.component';
+import { UrnesComponent } from './urnes/urnes.component';
+import { UsersComponent } from './users/users.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'urnes', component: UrnesComponent },
+  { path: 'users', component: UsersComponent },
+  { path: 'condidateList', component: CondidateListComponent },
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
