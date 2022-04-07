@@ -17,6 +17,8 @@ import { MatListModule } from '@angular/material/list';
 import { CondidateListComponent } from './condidate-list/condidate-list.component';
 import { UsersComponent } from './users/users.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +30,7 @@ import { UsersComponent } from './users/users.component';
     UsersComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -38,6 +41,7 @@ import { UsersComponent } from './users/users.component';
     MatIconModule,
     MatDividerModule,
     MatListModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
