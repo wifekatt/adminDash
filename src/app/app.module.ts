@@ -17,7 +17,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { CondidateListComponent } from './condidate-list/condidate-list.component';
 import { UsersComponent } from './users/users.component';
-
+import { MatDialogModule } from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminsComponent } from './admins/admins.component';
 
@@ -45,6 +45,7 @@ import { AdminsComponent } from './admins/admins.component';
     MatDividerModule,
     MatListModule,
     MatButtonModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
