@@ -19,6 +19,7 @@ import { CondidateListComponent } from './condidate-list/condidate-list.componen
 import { UsersComponent } from './users/users.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { AdminsComponent } from './admins/admins.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
     UrnesComponent,
     CondidateListComponent,
     UsersComponent,
+    AdminsComponent,
   ],
   imports: [
     HttpClientModule,

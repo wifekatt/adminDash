@@ -4,11 +4,13 @@ import { CondidateListComponent } from './condidate-list/condidate-list.componen
 import { HomeComponent } from './home/home.component';
 import { UrnesComponent } from './urnes/urnes.component';
 import { UsersComponent } from './users/users.component';
+import { AdminsComponent } from './admins/admins.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'urnes', component: UrnesComponent },
+  { path: 'admins', component: AdminsComponent },
   { path: 'users', component: UsersComponent },
   { path: 'condidateList', component: CondidateListComponent },
 
