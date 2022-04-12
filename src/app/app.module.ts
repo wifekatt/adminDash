@@ -20,7 +20,10 @@ import { UsersComponent } from './users/users.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminsComponent } from './admins/admins.component';
-
+import { UsersDialogComponent } from './users-dialog/users-dialog.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +34,7 @@ import { AdminsComponent } from './admins/admins.component';
     CondidateListComponent,
     UsersComponent,
     AdminsComponent,
+    UsersDialogComponent,
   ],
   imports: [
     HttpClientModule,
@@ -46,6 +50,9 @@ import { AdminsComponent } from './admins/admins.component';
     MatListModule,
     MatButtonModule,
     MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

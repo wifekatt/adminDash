@@ -10,6 +10,7 @@ button {
   outline: none;
   border: 0;
   background: transparent;
+  color: white;
 }
 .user {
   font-size: 14px;
@@ -28,4 +29,7 @@ mat-toolbar {
 }
 ::ng-deep .mat-menu-content {
   width: 160px;
+}
+.loggout{
+  color: black;
 }
