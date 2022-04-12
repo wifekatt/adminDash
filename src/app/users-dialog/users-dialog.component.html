@@ -1,49 +1,53 @@
 <h1 mat-dialog-title> Add User Form</h1>
 <div mat-dialog-content>
+<form [formGroup]="UsersForm">
   <mat-form-field appearance="outline">
     <mat-label>Full Name</mat-label>
-    <input matInput placeholder="write name">
+    <input formControlName="FullName" matInput placeholder="write name">
   </mat-form-field>
 
   <mat-form-field appearance="outline">
     <mat-label>Email</mat-label>
-    <input matInput placeholder="write email">
+    <input formControlName="Email" matInput placeholder="write email">
   </mat-form-field>
 
   <mat-form-field appearance="outline">
     <mat-label>Telephone Number</mat-label>
-    <input matInput placeholder="write phone number">
+    <input formControlName="Telephone" matInput placeholder="write phone number">
   </mat-form-field>
 
     <mat-form-field appearance="outline">
       <mat-label>CIN</mat-label>
-      <input matInput placeholder="write CIN">
+      <input formControlName="CIN" matInput placeholder="write CIN">
     </mat-form-field>
 
     <mat-form-field appearance="outline">
       <mat-label>Pid</mat-label>
-      <input matInput placeholder="write Pid">
+      <input formControlName="Pid" matInput placeholder="write Pid">
     </mat-form-field>
 
     <mat-form-field appearance="outline">
       <mat-label>Zip Code</mat-label>
-      <input matInput placeholder="write code">
+      <input formControlName="Zip_code" matInput placeholder="write code">
     </mat-form-field>
 
     <mat-form-field appearance="outline">
       <mat-label>Bank Code</mat-label>
-      <input matInput placeholder="write code">
+      <input formControlName="Bank_code" matInput placeholder="write code">
     </mat-form-field>
 
     <mat-form-field appearance="outline">
       <mat-label>Language</mat-label>
-
-      <mat-select placeholder="language">
+      <mat-select formControlName="Language" placeholder="language">
         <mat-option value="EN">English</mat-option>
         <mat-option value="FR">French</mat-option>
         <mat-option value="AR">Arabic</mat-option>
       </mat-select>
-
     </mat-form-field>
-
+  </form>
 </div>
+    <div mat-dialog-action [align]="'end'">
+      <button mat-raised-button color="warn" mat-dialog-close>cancel</button>
+      <button style="margin-left: 8px;" mat-raised-button class="matgreen" (click)="addUser()">save</button>
+    </div>
+

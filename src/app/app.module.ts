@@ -31,6 +31,8 @@ import { CondidateComponent } from './condidate/condidate.component';
 import { CondidateDialogComponent } from './condidate-dialog/condidate-dialog.component';
 import { AdminsDialogComponent } from './admins-dialog/admins-dialog.component';
 import { VoteDialogComponent } from './vote-dialog/vote-dialog.component';
+import { FormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -54,6 +56,8 @@ import { VoteDialogComponent } from './vote-dialog/vote-dialog.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     // * MATERIAL IMPORTS
     MatSidenavModule,
     MatToolbarModule,
@@ -68,6 +72,7 @@ import { VoteDialogComponent } from './vote-dialog/vote-dialog.component';
     MatSelectModule,
     MatDatepickerModule,
     MatNativeDateModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
