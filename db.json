@@ -1,0 +1,36 @@
+{
+  "Users": [
+    {
+      "FullName": "wifek",
+      "Email": "wifek.attia.2000@gmail.com",
+      "Telephone": "54121703",
+      "CIN": "14019029",
+      "Pid": "145",
+      "Zip_code": "5020",
+      "Bank_code": "5359401420097012",
+      "Language": "EN",
+      "id": 1
+    },
+    {
+      "FullName": "sami",
+      "Email": "hamdaoui",
+      "Telephone": "29839350",
+      "CIN": "11254785",
+      "Pid": "hdozd",
+      "Zip_code": "5000",
+      "Bank_code": "21452587562",
+      "Language": "FR",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
