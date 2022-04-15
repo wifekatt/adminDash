@@ -18,10 +18,22 @@
   font-size: 2rem;
 }
 .page__content-data {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 20%;
+  left: 20%;
+  transform: translate(-20%, -20%);
+  margin : 0 auto;
+
 }
 .example-spacer {
   flex: 1 1 auto;
 }
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+

@@ -33,6 +33,9 @@ import { AdminsDialogComponent } from './admins-dialog/admins-dialog.component';
 import { VoteDialogComponent } from './vote-dialog/vote-dialog.component';
 import { FormsModule} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -72,6 +75,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatSelectModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
 
   ],
   providers: [],
