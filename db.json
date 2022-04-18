@@ -79,12 +79,20 @@
     }
   ],
   "admins": [
+    {
+      "FullName": "wifek",
+      "Password": "wifek",
+      "PrivilegeID": "125",
+      "id": 1
+    },
+    {
+      "FullName": "sami",
+      "Password": "sami",
+      "PrivilegeID": "142",
+      "id": 2
+    }
   ],
-  "condidate": [
-  ],
-  "condidateList": [
-  ],
-  "vote": [
-  ]
-
+  "condidate": [],
+  "condidateList": [],
+  "vote": []
 }

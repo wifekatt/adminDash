@@ -1,1 +1,25 @@
-<p>admins-dialog works!</p>
+<h1 mat-dialog-title> Add admin Form</h1>
+<div mat-dialog-content>
+<form [formGroup]="AdminsForm">
+  <mat-form-field appearance="outline">
+    <mat-label>Full Name</mat-label>
+    <input formControlName="FullName" matInput placeholder="write name">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input formControlName="Password" matInput placeholder="write Password">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>PrivilegeID</mat-label>
+    <input formControlName="PrivilegeID" matInput placeholder="write PrivilegeID">
+  </mat-form-field>
+
+  </form>
+</div>
+    <div mat-dialog-action [align]="'end'">
+      <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+      <button style="margin-left: 8px;" mat-raised-button class="matgreen" (click)="addAdmin()">{{actionBtn}}</button>
+    </div>
+
