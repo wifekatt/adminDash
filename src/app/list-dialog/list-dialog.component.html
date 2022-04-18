@@ -1,0 +1,20 @@
+<h1 mat-dialog-title> Add List Form</h1>
+<div mat-dialog-content>
+<form [formGroup]="ListForm">
+  <mat-form-field appearance="outline">
+    <mat-label>listID</mat-label>
+    <input formControlName="listID" matInput placeholder="write ID">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>listName</mat-label>
+    <input formControlName="listName" matInput placeholder="write listName">
+  </mat-form-field>
+
+  </form>
+</div>
+    <div mat-dialog-action [align]="'end'">
+      <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+      <button style="margin-left: 8px;" mat-raised-button class="matgreen" (click)="addList()">{{actionBtn}}</button>
+    </div>
+

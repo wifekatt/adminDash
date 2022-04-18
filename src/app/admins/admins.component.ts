@@ -12,7 +12,7 @@ import {MatTableDataSource} from '@angular/material/table';
 })
 export class AdminsComponent implements OnInit {
 
-  displayedColumns: string[] = ['FullName', 'Password', 'PrivilegeID'];
+  displayedColumns: string[] = ['FullName', 'Password', 'PrivilegeID','action'];
   dataSource!: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;

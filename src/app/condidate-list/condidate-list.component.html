@@ -1,10 +1,59 @@
 <div class="container-fluid page">
-  <div class="example-spacer page__box p-3 mt-2">Condidate-list
-    <button mat-raised-button class="btn btn-primary pull-right">Add list</button>
+  <div class="example-spacer page__box p-3 mt-2">condidate-lists
+    <button mat-raised-button class="btn btn-primary pull-right" (click)="openDialog()">Add List</button>
   </div>
   <div class="page__content shadow p-3 position-relative">
     <div class="page__content-data position-absolute text-center">
-      list Content Goes Here
+
+      <mat-form-field appearance="standard">
+        <mat-label>Filter</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+      </mat-form-field>
+
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource" matSort>
+
+
+          <!-- listID Column -->
+          <ng-container matColumnDef="listID">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> listID </th>
+            <td mat-cell *matCellDef="let row"> {{row.listID}}% </td>
+          </ng-container>
+
+          <!-- listName Column -->
+          <ng-container matColumnDef="listName">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> listName </th>
+            <td mat-cell *matCellDef="let row"> {{row.listName}} </td>
+          </ng-container>
+
+          <!-- action Column -->
+          <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> action </th>
+            <td mat-cell *matCellDef="let row">
+              <button mat-icon-button (click)="editList(row)" color="primary">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-icon-button (click)="deleteList(row.id)" color="warn">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+          <!-- Row shown when there is no matching data. -->
+          <tr class="mat-row" *matNoDataRow>
+            <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+          </tr>
+        </table>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of lists"></mat-paginator>
+      </div>
+
+
+
     </div>
   </div>
 </div>
+

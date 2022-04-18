@@ -82,7 +82,7 @@
     {
       "FullName": "wifek",
       "Password": "wifek",
-      "PrivilegeID": "125",
+      "PrivilegeID": "126",
       "id": 1
     },
     {
@@ -93,6 +93,25 @@
     }
   ],
   "condidate": [],
-  "condidateList": [],
-  "vote": []
+  "condidateList": [
+    {
+      "listID": "1240",
+      "listName": "ahmed",
+      "id": 1
+    },
+    {
+      "listID": "12",
+      "listName": "last",
+      "id": 2
+    }
+  ],
+  "vote": [
+    {
+      "VoteID": "12",
+      "VoteName": "7okoumiya",
+      "MaxNumChoices": "1",
+      "BeginDate": "12/04/2015",
+      "ExpiryDate": "14/02/2014"
+    }
+  ]
 }

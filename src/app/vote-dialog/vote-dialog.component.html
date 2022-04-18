@@ -1,1 +1,39 @@
-<p>vote-dialog works!</p>
+<h1 mat-dialog-title> Add vote Form</h1>
+<div mat-dialog-content>
+<form [formGroup]="VotesForm">
+  <mat-form-field appearance="outline">
+    <mat-label>Vote ID</mat-label>
+    <input formControlName="VoteID" matInput placeholder="write ID">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Vote Name</mat-label>
+    <input formControlName="VoteName" matInput placeholder="write Name">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Max Choices</mat-label>
+    <input formControlName="MaxNumChoices" matInput placeholder="write MaxNumChoices">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>choose a begin date</mat-label>
+    <input matInput [matDatepicker]="picker1">
+    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+    <mat-datepicker #picker1></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>choose an expiry date</mat-label>
+    <input matInput [matDatepicker]="picker2">
+    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+    <mat-datepicker #picker2></mat-datepicker>
+  </mat-form-field>
+
+  </form>
+</div>
+    <div mat-dialog-action [align]="'end'">
+      <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+      <button style="margin-left: 8px;" mat-raised-button class="matgreen" (click)="addVote()">{{actionBtn}}</button>
+    </div>
+

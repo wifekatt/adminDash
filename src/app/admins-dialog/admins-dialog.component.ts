@@ -37,12 +37,12 @@ addAdmin(){
       this.adminApi.postAdmin(this.AdminsForm.value)
       .subscribe({
         next:(res)=>{
-          alert("user added successfully")
+          alert("admin added successfully")
           this.AdminsForm.reset();
           this.dialogRef.close('save');
         },
         error:()=>{
-          alert("error while adding the user!!")
+          alert("error while adding the admin!!")
         }
       })
     }

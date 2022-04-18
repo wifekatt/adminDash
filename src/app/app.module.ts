@@ -36,6 +36,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { ListDialogComponent } from './list-dialog/list-dialog.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { MatSortModule } from '@angular/material/sort';
     CondidateDialogComponent,
     AdminsDialogComponent,
     VoteDialogComponent,
+    ListDialogComponent,
   ],
   imports: [
     HttpClientModule,
