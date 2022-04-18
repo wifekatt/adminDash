@@ -15,4 +15,12 @@ export class UserApiService {
   getUser(){
     return this.httpClient.get<any>("http://localhost:3000/Users/");
   }
+
+  putUser(data : any , id : number){
+    return this.httpClient.put<any>("http://localhost:3000/Users/"+id ,data);
+  }
+
+  deleteUser(id : number){
+    return this.httpClient.delete<any>("http://localhost:3000/Users/"+id);
+  }
 }

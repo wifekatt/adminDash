@@ -5,7 +5,7 @@
       "Email": "wifek.attia.2000@gmail.com",
       "Telephone": "54121703",
       "CIN": "14019029",
-      "Pid": "145",
+      "Pid": "1450",
       "Zip_code": "5020",
       "Bank_code": "5359401420097012",
       "Language": "EN",
@@ -19,19 +19,8 @@
       "Pid": "hdozd",
       "Zip_code": "5000",
       "Bank_code": "21452587562",
-      "Language": "FR",
+      "Language": "AR",
       "id": 2
-    },
-    {
-      "FullName": "wifek",
-      "Email": "wifek",
-      "Telephone": "54121703",
-      "CIN": "14019029",
-      "Pid": "120",
-      "Zip_code": "5020",
-      "Bank_code": "1246588654",
-      "Language": "EN",
-      "id": 3
     },
     {
       "FullName": "ahmed",
@@ -87,27 +76,15 @@
       "Bank_code": "125478963",
       "Language": "AR",
       "id": 8
-    },
-    {
-      "FullName": "sami",
-      "Email": "sami@gmail.com",
-      "Telephone": "29839350",
-      "CIN": "152465",
-      "Pid": "456",
-      "Zip_code": "5000",
-      "Bank_code": "1244686461",
-      "Language": "FR",
-      "id": 9
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
+  "admins": [
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "condidate": [
+  ],
+  "condidateList": [
+  ],
+  "vote": [
+  ]
+
 }

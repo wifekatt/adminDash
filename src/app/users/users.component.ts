@@ -30,7 +30,11 @@ export class UsersComponent implements OnInit {
   openDialog() {
     this.dialog.open(UsersDialogComponent, {
       width:'30%'
-    });
+    }).afterClosed().subscribe(val=>{
+      if(val === 'save'){
+        this.getAllUsers();
+        }
+    })
   }
 
   getAllUsers(){
@@ -43,10 +47,34 @@ export class UsersComponent implements OnInit {
 
             },
             error:(err)=>{
-              alert("error while fetching the records")
+              alert("error while fetching the records!!")
             }
           })
   }
+  editUser(row : any){
+    this.dialog.open(UsersDialogComponent,{
+    width:'30%',
+    data:row
+    }).afterClosed().subscribe(val=>{
+      if(val === 'update'){
+        this.getAllUsers();
+        }
+    })
+    }
+  deleteUser(id : number){
+    this.userapi.deleteUser(id)
+    .subscribe({
+      next:(res)=>{
+        alert("user deleted successfully");
+        this.getAllUsers();
+      },
+      error:()=>{
+        alert("error while deleting the user!!")
+      }
+    })
+
+  }
+
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
