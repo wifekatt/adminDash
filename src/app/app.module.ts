@@ -37,7 +37,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { ListDialogComponent } from './list-dialog/list-dialog.component';
-
+import { AdminDashComponent } from './admin-dash/admin-dash.component';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +56,8 @@ import { ListDialogComponent } from './list-dialog/list-dialog.component';
     AdminsDialogComponent,
     VoteDialogComponent,
     ListDialogComponent,
+    AdminDashComponent,
+    LoginComponent,
   ],
   imports: [
     HttpClientModule,

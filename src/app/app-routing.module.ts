@@ -7,9 +7,11 @@ import { UsersComponent } from './users/users.component';
 import { AdminsComponent } from './admins/admins.component';
 import { CondidateComponent } from './condidate/condidate.component';
 import { VoteComponent } from './vote/vote.component';
+import { AdminDashComponent } from './admin-dash/admin-dash.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'urnes', component: UrnesComponent },
   { path: 'admins', component: AdminsComponent },
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'condidateList', component: CondidateListComponent },
   { path: 'condidate', component: CondidateComponent },
   { path: 'vote', component: VoteComponent },
+  { path: 'adminDash', component: AdminDashComponent},
+  {path: 'login', component: LoginComponent},
 
 ];
 
