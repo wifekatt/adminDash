@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -39,6 +38,11 @@ import { MatSortModule } from '@angular/material/sort';
 import { ListDialogComponent } from './list-dialog/list-dialog.component';
 import { AdminDashComponent } from './admin-dash/admin-dash.component';
 import { LoginComponent } from './login/login.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatCardModule } from '@angular/material/card';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,6 +70,7 @@ import { LoginComponent } from './login/login.component';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    FlexLayoutModule,
     // * MATERIAL IMPORTS
     MatSidenavModule,
     MatToolbarModule,
@@ -83,6 +88,8 @@ import { LoginComponent } from './login/login.component';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    MatButtonToggleModule,
+    MatCardModule,
 
   ],
   providers: [],

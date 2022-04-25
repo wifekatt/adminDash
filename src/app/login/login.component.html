@@ -1,4 +1,33 @@
-<p>login works!</p>
+<div class="container-fluid">
 
-<button type="button" class="btn btn-link" (click)="goToDash()">Go To Dash</button>
+  <main id="main" class=" alert-info">
+    <div id="login-left">
+      <div class="logo">
+        <img id="logo" src="logo.png" alt="logo">
+      </div>
+    </div>
+    <div id="login-right">
+      <div class="card col-md-8">
+        <div>
+          <mat-card>
+          <form fxLayoutAlign="stretch" fxLayout="column">
 
+            <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="Email">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input matInput type="password" placeholder="password">
+            </mat-form-field>
+
+            <button mat-button type="submit" class="btn-sm btn-block btn-wave col-md-4 btn-primary">Login</button>
+          </form>
+        </mat-card>
+        </div>
+      </div>
+    </div>
+
+</main>
+ </div>
