@@ -13,6 +13,7 @@ import {MatTableDataSource} from '@angular/material/table';
 })
 export class VoteComponent implements OnInit {
 
+  sideBarOpen = true;
   displayedColumns: string[] = ['VoteID', 'VoteName', 'MaxNumChoices', 'BeginDate', 'ExpiryDate','action'];
   dataSource!: MatTableDataSource<any>;
 
@@ -27,6 +28,9 @@ export class VoteComponent implements OnInit {
     this.getAllVotes();
   }
 
+  sideBarToggler() {
+    this.sideBarOpen = !this.sideBarOpen;
+  }
   openDialog() {
     this.dialog.open(VoteDialogComponent, {
       width:'30%'

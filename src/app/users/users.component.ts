@@ -13,6 +13,7 @@ import {MatTableDataSource} from '@angular/material/table';
 })
 export class UsersComponent implements OnInit {
 
+  sideBarOpen = true;
   displayedColumns: string[] = ['FullName', 'Email', 'Telephone', 'CIN', 'Pid', 'Zip_code', 'Bank_code', 'Language','action'];
   dataSource!: MatTableDataSource<any>;
 
@@ -25,6 +26,9 @@ export class UsersComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllUsers();
+  }
+  sideBarToggler() {
+    this.sideBarOpen = !this.sideBarOpen;
   }
 
   openDialog() {

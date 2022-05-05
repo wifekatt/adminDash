@@ -12,6 +12,7 @@ import {MatTableDataSource} from '@angular/material/table';
 })
 export class CondidateComponent implements OnInit {
 
+  sideBarOpen = true;
   displayedColumns: string[] = ['condidatID','FullName','action'];
   dataSource!: MatTableDataSource<any>;
 
@@ -26,7 +27,9 @@ export class CondidateComponent implements OnInit {
   ngOnInit(): void {
     this.getAllCondidates();
   }
-
+  sideBarToggler() {
+    this.sideBarOpen = !this.sideBarOpen;
+  }
   openDialog() {
     this.dialog.open(CondidateDialogComponent, {
       width:'30%'

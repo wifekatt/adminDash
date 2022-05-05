@@ -9,6 +9,7 @@ import { CondidateComponent } from './condidate/condidate.component';
 import { VoteComponent } from './vote/vote.component';
 import { AdminDashComponent } from './admin-dash/admin-dash.component';
 import { LoginComponent } from './login/login.component';
+import { LoginEmailComponent } from './login-email/login-email.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'condidate', component: CondidateComponent },
   { path: 'vote', component: VoteComponent },
   { path: 'adminDash', component: AdminDashComponent},
-  {path: 'login', component: LoginComponent},
+  { path: 'login', component: LoginComponent},
+  { path: 'loginemail',component: LoginEmailComponent},
 
 ];
 

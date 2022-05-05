@@ -14,6 +14,7 @@ import {MatTableDataSource} from '@angular/material/table';
 })
 export class CondidateListComponent implements OnInit {
 
+  sideBarOpen = true;
   displayedColumns: string[] = ['listID', 'listName','action'];
   dataSource!: MatTableDataSource<any>;
 
@@ -26,6 +27,9 @@ export class CondidateListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllClists();
+  }
+  sideBarToggler() {
+    this.sideBarOpen = !this.sideBarOpen;
   }
   openDialog() {
     this.dialog.open(ListDialogComponent, {

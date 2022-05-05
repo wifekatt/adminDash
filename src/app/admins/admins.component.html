@@ -1,62 +1,71 @@
-<div class="container-fluid page">
-  <div class="example-spacer page__box p-3 mt-2">Admins
-    <button mat-raised-button class="btn btn-primary pull-right" (click)="openDialog()">Add Admin</button>
-  </div>
-  <div class="page__content shadow p-3 position-relative">
-    <div class="page__content-data position-absolute text-center">
-
-      <mat-form-field appearance="standard">
-        <mat-label>Filter</mat-label>
-        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
-      </mat-form-field>
-
-      <div class="mat-elevation-z8">
-        <table mat-table [dataSource]="dataSource" matSort>
-
-          <!-- Name Column -->
-          <ng-container matColumnDef="FullName">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> FullName </th>
-            <td mat-cell *matCellDef="let row"> {{row.FullName}} </td>
-          </ng-container>
-
-          <!-- password Column -->
-          <ng-container matColumnDef="Password">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Password </th>
-            <td mat-cell *matCellDef="let row"> {{row.Password}}% </td>
-          </ng-container>
-
-          <!-- PrivilegeID Column -->
-          <ng-container matColumnDef="PrivilegeID">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> PrivilegeID </th>
-            <td mat-cell *matCellDef="let row"> {{row.PrivilegeID}} </td>
-          </ng-container>
-
-          <!-- action Column -->
-          <ng-container matColumnDef="action">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> action </th>
-            <td mat-cell *matCellDef="let row">
-              <button mat-icon-button (click)="editAdmin(row)" color="primary">
-                <mat-icon>edit</mat-icon>
-              </button>
-              <button mat-icon-button (click)="deleteAdmin(row.id)" color="warn">
-                <mat-icon>delete</mat-icon>
-              </button>
-            </td>
-          </ng-container>
-
-          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-
-          <!-- Row shown when there is no matching data. -->
-          <tr class="mat-row" *matNoDataRow>
-            <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
-          </tr>
-        </table>
-
-        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of admins"></mat-paginator>
+<mat-drawer-container>
+  <mat-drawer mode="side" [opened]="sideBarOpen">
+    <!-- <mat-drawer mode="side" opened="true"> -->
+    <app-sidenav></app-sidenav>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-header (toggleSidebarForMe)="sideBarToggler()"></app-header>
+    <div class="container-fluid page">
+      <div class="example-spacer page__box p-3 mt-2">Admins
+        <button mat-raised-button class="btn btn-primary pull-right" (click)="openDialog()">Add Admin</button>
       </div>
+      <div class="page__content shadow p-3 position-relative">
+        <div class="page__content-data position-absolute text-center">
 
+          <mat-form-field appearance="standard">
+            <mat-label>Filter</mat-label>
+            <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+          </mat-form-field>
+
+          <div class="mat-elevation-z8">
+            <table mat-table [dataSource]="dataSource" matSort>
+
+              <!-- Name Column -->
+              <ng-container matColumnDef="FullName">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> FullName </th>
+                <td mat-cell *matCellDef="let row"> {{row.FullName}} </td>
+              </ng-container>
+
+              <!-- password Column -->
+              <ng-container matColumnDef="Password">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Password </th>
+                <td mat-cell *matCellDef="let row"> {{row.Password}}% </td>
+              </ng-container>
+
+              <!-- PrivilegeID Column -->
+              <ng-container matColumnDef="PrivilegeID">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> PrivilegeID </th>
+                <td mat-cell *matCellDef="let row"> {{row.PrivilegeID}} </td>
+              </ng-container>
+
+              <!-- action Column -->
+              <ng-container matColumnDef="action">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> action </th>
+                <td mat-cell *matCellDef="let row">
+                  <button mat-icon-button (click)="editAdmin(row)" color="primary">
+                    <mat-icon>edit</mat-icon>
+                  </button>
+                  <button mat-icon-button (click)="deleteAdmin(row.id)" color="warn">
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+              <!-- Row shown when there is no matching data. -->
+              <tr class="mat-row" *matNoDataRow>
+                <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+              </tr>
+            </table>
+
+            <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of admins"></mat-paginator>
+          </div>
+
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
+  </mat-drawer-content>
+</mat-drawer-container>

@@ -76,13 +76,24 @@
       "Bank_code": "125478963",
       "Language": "AR",
       "id": 8
+    },
+    {
+      "FullName": "rima",
+      "Email": "rima@gmail.com",
+      "Telephone": "55324112",
+      "CIN": "1452741",
+      "Pid": "125",
+      "Zip_code": "5020",
+      "Bank_code": "145258745521",
+      "Language": "EN",
+      "id": 9
     }
   ],
   "admins": [
     {
       "FullName": "wifek",
       "Password": "wifek",
-      "PrivilegeID": "126",
+      "PrivilegeID": "1264",
       "id": 1
     },
     {
@@ -114,7 +125,5 @@
       "ExpiryDate": "14/02/2014"
     }
   ],
-  "Login": [
-
-  ]
+  "Login": []
 }

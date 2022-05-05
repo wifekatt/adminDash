@@ -41,6 +41,7 @@ import { LoginComponent } from './login/login.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
+import { LoginEmailComponent } from './login-email/login-email.component';
 
 
 @NgModule({
@@ -62,6 +63,7 @@ import { MatCardModule } from '@angular/material/card';
     ListDialogComponent,
     AdminDashComponent,
     LoginComponent,
+    LoginEmailComponent,
   ],
   imports: [
     HttpClientModule,

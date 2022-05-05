@@ -8,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  sideBarOpen = true;
   constructor( private http: HttpClient) { }
 
   ngOnInit(): void {
+  }
+  sideBarToggler() {
+    this.sideBarOpen = !this.sideBarOpen;
   }
   download(){
     alert("download successfully");
