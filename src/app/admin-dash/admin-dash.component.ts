@@ -9,7 +9,7 @@ export class AdminDashComponent implements OnInit {
 
   title = 'adminDash';
   sideBarOpen = true;
-  
+
   constructor() { }
 
   ngOnInit(): void {
