@@ -60,7 +60,7 @@ export class VoteComponent implements OnInit {
     width:'30%',
     data:row
     }).afterClosed().subscribe(val=>{
-      if(val === 'update'){
+      if(val === 'Update'){
         this.getAllVotes();
         }
     })

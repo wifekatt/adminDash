@@ -5,9 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { UrnesComponent } from './urnes/urnes.component';
 import { UsersComponent } from './users/users.component';
 import { AdminsComponent } from './admins/admins.component';
-import { CondidateComponent } from './condidate/condidate.component';
+import { CondidateComponent } from './candidate/condidate.component';
 import { VoteComponent } from './vote/vote.component';
-import { AdminDashComponent } from './admin-dash/admin-dash.component';
 import { LoginComponent } from './login/login.component';
 import { LoginEmailComponent } from './login-email/login-email.component';
 
@@ -20,7 +19,6 @@ const routes: Routes = [
   { path: 'condidateList', component: CondidateListComponent },
   { path: 'condidate', component: CondidateComponent },
   { path: 'vote', component: VoteComponent },
-  { path: 'adminDash', component: AdminDashComponent},
   { path: 'login', component: LoginComponent},
   { path: 'loginemail',component: LoginEmailComponent},
 

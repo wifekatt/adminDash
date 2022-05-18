@@ -27,7 +27,7 @@ export class ListDialogComponent implements OnInit {
     if(this.editData){
       this.actionBtn = "Update";
       this.ListForm.controls['listID'].setValue(this.editData.listID);
-      this.ListForm.controls['Email'].setValue(this.editData.listName);
+      this.ListForm.controls['listName'].setValue(this.editData.listName);
     }
   }
   addList(){
@@ -38,7 +38,7 @@ export class ListDialogComponent implements OnInit {
           next:(res)=>{
             alert("List added successfully")
             this.ListForm.reset();
-            this.dialogRef.close('save');
+            this.dialogRef.close('Save');
           },
           error:()=>{
             alert("error while adding the List!!")
@@ -57,7 +57,7 @@ export class ListDialogComponent implements OnInit {
       next:(res)=>{
         alert("List updated successfully")
         this.ListForm.reset();
-        this.dialogRef.close('update');
+        this.dialogRef.close('Update');
       },
       error:()=>{
         alert("error while updating the list!!")

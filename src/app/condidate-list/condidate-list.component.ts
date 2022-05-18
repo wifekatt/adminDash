@@ -35,7 +35,7 @@ export class CondidateListComponent implements OnInit {
     this.dialog.open(ListDialogComponent, {
       width:'30%'
     }).afterClosed().subscribe(val=>{
-      if(val === 'save'){
+      if(val === 'Save'){
         this.getAllClists();
         }
     })
@@ -60,7 +60,7 @@ export class CondidateListComponent implements OnInit {
     width:'30%',
     data:row
     }).afterClosed().subscribe(val=>{
-      if(val === 'update'){
+      if(val === 'Update'){
         this.getAllClists();
         }
     })

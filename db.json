@@ -23,17 +23,6 @@
       "id": 2
     },
     {
-      "FullName": "ahmed",
-      "Email": "ahmed.gzara@gmail.com",
-      "Telephone": "23051221",
-      "CIN": "15201421",
-      "Pid": "142",
-      "Zip_code": "5021",
-      "Bank_code": "1452114522",
-      "Language": "AR",
-      "id": 4
-    },
-    {
       "FullName": "manar",
       "Email": "manar@gmail.com",
       "Telephone": "458745211",
@@ -60,7 +49,7 @@
       "Email": "essil@gmail.com",
       "Telephone": "94568745",
       "CIN": "1542365",
-      "Pid": "142",
+      "Pid": "1420",
       "Zip_code": "5020",
       "Bank_code": "12544752265",
       "Language": "FR",
@@ -101,19 +90,35 @@
       "Password": "sami",
       "PrivilegeID": "142",
       "id": 2
+    },
+    {
+      "FullName": "ahmed",
+      "Password": "1234",
+      "PrivilegeID": "1450",
+      "id": 3
     }
   ],
   "condidate": [],
   "condidateList": [
     {
-      "listID": "1240",
-      "listName": "ahmed",
-      "id": 1
+      "listID": "14",
+      "listName": "list1",
+      "id": 3
     },
     {
-      "listID": "12",
-      "listName": "last",
-      "id": 2
+      "listID": "17",
+      "listName": "list7",
+      "id": 6
+    },
+    {
+      "listID": "16",
+      "listName": "list6",
+      "id": 7
+    },
+    {
+      "listID": "13",
+      "listName": "vote3",
+      "id": 8
     }
   ],
   "vote": [
@@ -121,8 +126,8 @@
       "VoteID": "12",
       "VoteName": "7okoumiya",
       "MaxNumChoices": "1",
-      "BeginDate": "12/04/2015",
-      "ExpiryDate": "14/02/2014"
+      "BeginDate": "5/18/2022",
+      "ExpiryDate": "5/20/2022"
     }
   ],
   "Login": []

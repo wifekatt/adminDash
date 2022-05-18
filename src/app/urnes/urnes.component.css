@@ -41,3 +41,6 @@ mat-drawer-container {
 mat-drawer {
   background: #0f172a;
 }
+mat-grid-tile {
+  background: lightblue;
+}

@@ -6,8 +6,8 @@
   <mat-drawer-content>
     <app-header (toggleSidebarForMe)="sideBarToggler()"></app-header>
     <div class="container-fluid page">
-      <div class="example-spacer page__box p-3 mt-2">Condidates
-        <button mat-raised-button class="btn btn-primary pull-right" (click)="openDialog()">Add Condidate</button>
+      <div class="example-spacer page__box p-3 mt-2">Candidates
+        <button mat-raised-button class="btn btn-primary pull-right" (click)="openDialog()">Add Candidate</button>
       </div>
       <div class="page__content shadow p-3 position-relative">
         <div class="page__content-data position-absolute text-center">
@@ -22,7 +22,7 @@
 
               <!-- condidatID Column -->
               <ng-container matColumnDef="condidatID">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header> condidatID </th>
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> candidatID </th>
                 <td mat-cell *matCellDef="let row"> {{row.condidatID}} </td>
               </ng-container>
 

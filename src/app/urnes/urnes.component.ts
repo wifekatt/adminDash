@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+/**
+ * @title Basic grid-list
+ */
 @Component({
   selector: 'app-urnes',
   templateUrl: './urnes.component.html',

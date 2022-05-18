@@ -46,7 +46,7 @@ export class VoteDialogComponent implements OnInit {
             next:(res)=>{
               alert("vote added successfully")
               this.VotesForm.reset();
-              this.dialogRef.close('save');
+              this.dialogRef.close('Save');
             },
             error:()=>{
               alert("error while adding the vote!!")
@@ -65,7 +65,7 @@ export class VoteDialogComponent implements OnInit {
         next:(res)=>{
           alert("vote updated successfully")
           this.VotesForm.reset();
-          this.dialogRef.close('update');
+          this.dialogRef.close('Update');
         },
         error:()=>{
           alert("error while updating the vote!!")

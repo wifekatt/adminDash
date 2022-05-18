@@ -26,7 +26,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { VoteComponent } from './vote/vote.component';
-import { CondidateComponent } from './condidate/condidate.component';
+import { CondidateComponent } from './candidate/condidate.component';
 import { CondidateDialogComponent } from './condidate-dialog/condidate-dialog.component';
 import { AdminsDialogComponent } from './admins-dialog/admins-dialog.component';
 import { VoteDialogComponent } from './vote-dialog/vote-dialog.component';
@@ -36,12 +36,12 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { ListDialogComponent } from './list-dialog/list-dialog.component';
-import { AdminDashComponent } from './admin-dash/admin-dash.component';
 import { LoginComponent } from './login/login.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { LoginEmailComponent } from './login-email/login-email.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -61,7 +61,6 @@ import { LoginEmailComponent } from './login-email/login-email.component';
     AdminsDialogComponent,
     VoteDialogComponent,
     ListDialogComponent,
-    AdminDashComponent,
     LoginComponent,
     LoginEmailComponent,
   ],
@@ -92,6 +91,7 @@ import { LoginEmailComponent } from './login-email/login-email.component';
     MatSortModule,
     MatButtonToggleModule,
     MatCardModule,
+    MatGridListModule,
 
   ],
   providers: [],
