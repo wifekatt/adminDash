@@ -5,7 +5,7 @@ import { AdminApiService } from '../services/admin-api.service';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
-import { admin } from '../class/admin'
+import { Admin } from '../class/admin'
 @Component({
   selector: 'app-admins',
   templateUrl: './admins.component.html',
@@ -13,7 +13,7 @@ import { admin } from '../class/admin'
 })
 export class AdminsComponent implements OnInit {
 
-  admins: admin[];
+  Admins: Admin[];
   sideBarOpen = true;
   displayedColumns: string[] = ['FullName', 'Password', 'PrivilegeID','action'];
   dataSource!: MatTableDataSource<any>;
@@ -27,6 +27,7 @@ export class AdminsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllAdmins();
+    this.Admins
   }
   sideBarToggler() {
     this.sideBarOpen = !this.sideBarOpen;

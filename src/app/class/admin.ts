@@ -1,6 +1,6 @@
 export class Admin {
   adminID: number;
-	adminName: string;
+  adminName: string;
 	adminPassword: string;
 	privilegeID: number;
 }
